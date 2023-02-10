@@ -1,0 +1,15 @@
+##Recurssion code to find sum of digits
+## Author: Lince 
+## Date: 10th feb 2023
+
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    return n%2 + sum_of_digits(n//2)
+
+
+##Input number dynamically 
+n = int(input())
+
+##calling the function with value passed dynamically
+sum_of_digits(n)
