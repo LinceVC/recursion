@@ -5,6 +5,10 @@
 def power_of_num_rec(base,pwr):
     if pwr ==0:
         return 1
+    
+    if base == 0:
+        return 0
+    
     return base*power_of_num_rec(base,pwr-1)
 
 
