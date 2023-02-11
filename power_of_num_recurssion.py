@@ -9,6 +9,8 @@ def power_of_num_rec(base,pwr):
     if base == 0:
         return 0
     
+    if pwr<0:
+        return "Invalid Power"
     return base*power_of_num_rec(base,pwr-1)
 
 
